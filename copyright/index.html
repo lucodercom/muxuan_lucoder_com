@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>牧轩协议</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <style type="text/css">
+        .navbar-light .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link,
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width:80%;min-width: 400px;max-width:1000px;margin:1rem auto">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="#">MXP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="cp/index.html" target="main">首页</a>
+                        <a class="nav-item nav-link" href="cp/blog.html" target="main">博文</a>
+                        <a class="nav-item nav-link" href="cp/src.html" target="main">源码</a>
+                        <a class="nav-item nav-link" href="cp/sf.html" target="main">软件</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <iframe name="main" src="cp/index.html" style="width:100%;min-height:500px;border: none;"></iframe>
+        </section>
+        <footer>
+            <p><span id="curYear"></span> 牧轩开发者协议 © 版权所有</p>
+            <p>牧轩开发者协议 © 版权所有</p>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    window.onload = () => {
+        var d = new Date();
+        console.log(d.getFullYear());
+        document.getElementById("curYear").innerText = d.getFullYear();
+    };
+</script>
+
+</html>
